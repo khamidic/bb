@@ -194,6 +194,7 @@ ul {
 .main-heading {
     font-family: "Rama", "Helvetica", "Arial", sans-serif;
     font-size: 19vw;
+    font-weight: 500;
     line-height: 0.8;
     letter-spacing: -.01em;
     color: #ffffff;
@@ -269,6 +270,7 @@ ul {
 .section-heading {
     font-family: "Rama", "Helvetica", "Arial", sans-serif;
     font-size: 16.38888vw;
+    font-weight: 500;
     letter-spacing: -.01em;
     line-height: 0.8;
     color: #ffffff;
@@ -366,6 +368,7 @@ ul {
 .client-name {
     font-family: "Rama", "Helvetica", "Arial", sans-serif;
     font-size: 8.8888vw;
+    font-weight: 500;
     letter-spacing: -.01em;
     line-height: 86%;
     color: #000000;
