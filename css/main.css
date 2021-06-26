@@ -392,6 +392,11 @@ ul {
     align-items: center;
     justify-content: center;
     margin-top: 32px;
+    transition: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.ext-btn:hover {
+    background: #E80C00;
 }
 
 .famous-client-block__client-image {
@@ -406,7 +411,7 @@ ul {
 
 .famous-client-block__client-image,
 .famous-client-block__client-w-i-image {
-    height: 387px;
+    min-height: 387px;
 }
 
 .visual-container--cover {
