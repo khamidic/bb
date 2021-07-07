@@ -43,18 +43,20 @@ hMainNavigation.querySelectorAll('a').forEach(item => {
     })
 });
 
-let sectionHeadingApp = document.querySelector('.js-heading-app');
-let appFeaturesBlock = document.querySelector('.js-app-features');
-
-let appFeaturesBlockMarginTop = parseInt(getComputedStyle(appFeaturesBlock).marginTop, 10);
-let heightPercentage = 0.7;
-
 let changeAppFeaturesBlockMarginTop = () => {
+    let sectionHeadingApp = document.querySelector('.js-heading-app');
+    let appFeaturesBlock = document.querySelector('.js-app-features');
+    let appFeaturesBlockMarginTop = parseInt(getComputedStyle(appFeaturesBlock).marginTop, 10);
+    let heightPercentage = 0.7;
     appFeaturesBlock.style.marginTop = sectionHeadingApp.offsetHeight * heightPercentage + appFeaturesBlockMarginTop + 'px';
 };
 
 window.onload = () => {
-    changeAppFeaturesBlockMarginTop();
+    try {
+        changeAppFeaturesBlockMarginTop();
+    } catch (e) {
+        console.log(e);
+    }
     let coverBlocks = Array.from(document.querySelectorAll('.js-cover-block__el'));
     let timeline = anime.timeline();
     timeline.add({
@@ -67,6 +69,7 @@ window.onload = () => {
         easing: 'cubicBezier(0.25, 1, 0.5, 1)'
     }, '+=300')
 };
+
 window.onresize = () => {
     changeAppFeaturesBlockMarginTop()
 };

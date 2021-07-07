@@ -167,7 +167,8 @@ ul {
     background: #E80C00;
 }
 
-.hero-section {
+.hero-section,
+.lets-talk-section {
     padding: 10em 0;
 }
 
@@ -202,6 +203,7 @@ ul {
 }
 
 .cover-block {
+    display: block;
     position: relative;
     transform-origin: bottom;
 }
@@ -538,16 +540,16 @@ ul {
 }
 
 .copyright,
-.contact-info {
+.footer-contact-info {
     display: inline-flex;
 }
 
-.contact-info {
+.footer-contact-info {
     flex-direction: column;
 }
 
 .copyright__text,
-.contact-info__item {
+.footer-contact-info__item {
     font-family: "Avenir Regular", "Helvetica", "Arial", sans-serif;
     font-size: 12px;
     line-height: 1.25;
@@ -559,11 +561,11 @@ ul {
     margin-left: 24px;
 }
 
-.contact-info__item {
+.footer-contact-info__item {
     margin: 4px 0;
 }
 
-.contact-info__item:first-child {
+.footer-contact-info__item:first-child {
     margin-top: 0;
 }
 
@@ -604,6 +606,104 @@ ul {
     position: absolute;
     top: 312px;
     left: 64px;
+}
+
+.contact-paragraph {
+    font-family: "Avenir Medium", "Helvetica", "Arial", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: -.01em;
+    line-height: 1.55;
+    color: #E6E8EB;
+    max-width: 542px;
+    margin-top: 52px;
+}
+
+.grid-layout__item--form {
+    flex: 0 0 614px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 92px;
+}
+
+.input-row {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.input-row:first-of-type {
+    margin-top: 0;
+}
+
+.input-row__field,
+.input-row__submit {
+    width: 100%;
+    max-width: 614px;
+    height: 60px;
+    border: 1px solid #383A3F;
+    padding: 20px;
+    font-family: "Avenir Medium", "Helvetica", "Arial", sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: -.01em;
+    background: none;
+    color: #ffffff;
+    outline: none;
+}
+
+.input-row__field--message {
+    height: 256px;
+}
+
+.input-row__submit {
+    background: #ffffff;
+    color: #000000;
+    border: none;
+}
+
+.input-row__field::placeholder {
+    color: #5A616B;
+}
+
+.input-row__field:active,
+.input-row__field:focus {
+    border: 1px solid #ffffff;
+}
+
+.contact-info__label,
+.gyms-present__label {
+    font-family: "Avenir Demi", "Helvetica", "Arial", sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.contact-info,
+.gyms-present {
+    padding-left: 200px;
+}
+
+.contact-info {
+    margin-top: 92px;
+}
+
+.gyms-present {
+    margin-top: 78px;
+}
+
+.contact-info__item,
+.gyms-present__item {
+    display: block;
+    font-family: "Avenir Regular", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    letter-spacing: -.01em;
+    color: #ffffff;
+    margin-top: 14px;
 }
 
 @media only screen and (max-width: 1120px) {
