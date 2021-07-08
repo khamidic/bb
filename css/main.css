@@ -641,10 +641,12 @@ ul {
 .input-row__field,
 .input-row__submit {
     appearance: none;
+    -webkit-appearance: none;
     width: 100%;
     max-width: 614px;
     height: 60px;
     border: 1px solid #383A3F;
+    border-radius: 0;
     padding: 20px;
     font-family: "Avenir Medium", "Helvetica", "Arial", sans-serif;
     font-size: 1.125rem;
