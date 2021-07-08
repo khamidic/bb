@@ -640,6 +640,7 @@ ul {
 
 .input-row__field,
 .input-row__submit {
+    appearance: none;
     width: 100%;
     max-width: 614px;
     height: 60px;
