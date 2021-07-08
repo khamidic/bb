@@ -772,6 +772,16 @@ ul {
         margin-top: 40px;
         justify-content: flex-start;
     }
+    .gyms-present,
+    .contact-info {
+        padding-left: 0;
+    }
+    .grid-layout--contact {
+        flex-direction: column-reverse;
+    }
+    .grid-layout__item--form {
+        flex: 0 0 100%;
+    }
 }
 
 @media only screen and (max-width: 560px) {
