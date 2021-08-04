@@ -89,6 +89,7 @@ ul {
 }
 
 .logo {
+    width: 40px;
     height: 40px;
 }
 
@@ -530,7 +531,7 @@ ul {
     margin: 0;
 }
 
-.logo-mark > img {
+.logo-mark > svg {
     width: 100%;
     object-fit: contain;
 }
@@ -642,7 +643,7 @@ ul {
 .input-row__submit {
     appearance: none;
     -webkit-appearance: none;
-    width: 100%;
+    min-width: 100%;
     max-width: 614px;
     height: 60px;
     border: 1px solid #383A3F;
@@ -657,7 +658,8 @@ ul {
 }
 
 .input-row__field--message {
-    height: 256px;
+    min-height: 256px;
+    min-width: 100%;
 }
 
 .input-row__submit {
